@@ -28,7 +28,16 @@ li {
 a {
   text-decoration: none;
 }
-
+a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 0%;
+            height: 2px;
+            background-color: yellowgreen;
+            transition: 0.5s linear;
+        }
 span {
   color: white;
 }
