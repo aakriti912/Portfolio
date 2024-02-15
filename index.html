@@ -1,206 +1,54 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>
-portfolio
-        </title>
-     
-      <style>
-      {
- 
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 62.5%;
-  font-family: "Roboto", sans-serif;
-}
-
-body {
-   
-    background-color: #FEFFF1;
-}
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-a::after {
-            content: "";
-            position: absolute;
-            left: 0;
-            bottom: -5px;
-            width: 0%;
-            height: 2px;
-            background-color: yellowgreen;
-            transition: 0.5s linear;
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url("https://img.freepik.com/free-photo/black-mulberry-paper-textured-background_53876-129520.jpg?w=826&t=st=1708011881~exp=1708012481~hmac=9c3e4cfbd74cdef34ab0a02cafe72fa208e02781410f64a21414092f34835cda");
+            background-size: cover;
+            background-position: center;
+            height: 100vh; /* Ensure the body takes the full height of the viewport */
         }
-        
-span {
-  color: white;
-}
+
+        .navbar {
+            z-index: 1; /* Ensure the navbar is on top */
+        }
+    </style>
+</head>
+<body class="body">
+    <div>
+        <nav class="sticky top-0 navbar">
+            <div class="max-w-5xl mx-auto px-4">
+                <div class="flex items-center justify-between h-16">
+                    <span class="text-2xl text-white font-semibold font-serif">Aakriti</span>
+                    <div class="flex space-x-4 text-white">
+                        <a href="#">Dashboard</a>
+                        <a href="#">About</a>
+                        <a href="#">Projects</a>
+                        <a href="#">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-8 max-w-screen-md mx-auto p-8">
+<div class="p-8">
+    <h2 class="text-6xl font-semibold font-sans text-white">Hi my name is aakriti thapa</h2>
+ <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+</div>
+<div>
+    <img src="https://th.bing.com/th/id/R.01c7b181419e15cc614b2297a0e0b959?rik=zGf2g7HyblIvTg&riu=http%3a%2f%2fwww.aceshowbiz.com%2fimages%2fstill%2favatar114.jpg&ehk=A2qdetFD%2bCnHXOA868yrfaHHPewee02Hh2kWzPtS81Y%3d&risl=&pid=ImgRaw&r=0" alt="my image" class="max-w-full h-auto"/>
+
+</div>
+            </div>
+        </nav>
 
 
 
-.header {
-  border-bottom: 1px solid #e2e8f0;
-  background-color: #FBAB7E;
-    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
-  border-radius: 0 0 12px 12px;
-  box-shadow: -1px -8px 54px -21px rgba(59,51,51,0.99);
-  -webkit-box-shadow: -1px -8px 54px -21px rgba(59,51,51,0.99);
-  -moz-box-shadow: -1px -8px 54px -21px rgba(59,51,51,0.99);
-}
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 1.5rem;
-  z-index:999;
-}
-
-.bar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  background-color: #101010;
-}
-
-.hamburger {
-  display: none;
-}
-
-.bar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  background-color: #101010;
-}
-
-.nav-menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav-item {
-  margin-left: 5rem;
-}
-
-.nav-link {
-  font-size: 1.6rem;
-  font-weight: 400;
-  color: #12192c;
-}
-
-.nav-link:hover {
-  color: #fff;
-}
-
-.nav-logo > img{
-    height:40px;
-    width:40px;
-    object-fit:cover;
-}
-
-@media only screen and (max-width: 768px) {
-  .nav-menu {
-    position: fixed;
-    left: -100%;
-    top: 5.5rem;
-    flex-direction: column;
-    background-color: #fff;
-    width: 100%;
-    border-radius: 10px;
-    text-align: center;
-    transition: 0.3s;
-    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-  }
-  
-    .nav-menu.active {
-    left: 0;
-  }
-  .nav-link{
-    color:#FBAB7E;
-  }
-  .nav-link:hover {
-    color: #12192c;
-  }
-  .nav-item {
-    margin: 2.5rem 0;
-  }
-
-  .hamburger {
-    display: block;
-    cursor: pointer;
-  }
-
-  .hamburger.active .bar:nth-child(2) {
-    opacity: 0;
-  }
-
-  .hamburger.active .bar:nth-child(1) {
-    -webkit-transform: translateY(8px) rotate(45deg);
-    transform: translateY(8px) rotate(45deg);
-  }
-
-  .hamburger.active .bar:nth-child(3) {
-    -webkit-transform: translateY(-8px) rotate(-45deg);
-    transform: translateY(-8px) rotate(-45deg);
-  }
-}
-      </style>
-    </head>
-    <body>
-        <header class="header">
-            <nav class="navbar">
-              <a href="#" class="nav-logo"><img src="https://1.bp.blogspot.com/-KUzc2YMahZM/YOx0bOfgKNI/AAAAAAAAAQw/0o8tBTQ2GTEj-SVs7ZiHiCtfbJXJnU-TQCLcBGAsYHQ/s200/Untitled%2Bdesign%2B%252814%2529.png"></img></a>
-              <ul class="nav-menu">
-               
-                <li class="nav-item">
-                  <a href="#" class="nav-link">skill
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">Contact</a>
-                </li>
-              </ul>
-              <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-              </div>
-            </nav>
-          </header>
-        <script>
-          const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".nav-menu");
-const navLink = document.querySelectorAll(".nav-link");
-
-const mobileMenu = () => {
-  hamburger.classList.toggle("active")
-  navMenu.classList.toggle("active")
-}
-
-const closeMenu = () => {
-  hamburger.classList.remove("active")
-  navMenu.classList.remove("active")
-}
-
-hamburger.addEventListener("click" , mobileMenu)
-navLink.forEach((l) => l.addEventListener("click",closeMenu))
-        </script>
-    </body>
+    </div>
+</body>
 </html>
