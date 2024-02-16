@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            /* background-image: url("https://img.freepik.com/free-photo/black-mulberry-paper-textured-background_53876-129520.jpg?w=826&t=st=1708011881~exp=1708012481~hmac=9c3e4cfbd74cdef34ab0a02cafe72fa208e02781410f64a21414092f34835cda"); */
+           background-color: black;
+            background-size: cover;
+            background-position: center;
+            height: 100vh; /* Ensure the body takes the full height of the viewport */
+           font-family: 'Share Tech Mono', monospace;
+        }
+        .main{
+            background-color: #C9C0AF;
+            /* background-image: url("./image/image (1).png"); */
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position-x: right;
+            background-position-y: 50px;
+            margin:7px;
+            height: 100vh;
+        }
+        .work{
+          background-color: #C9C0AF;
+        }
+
+        .navbar {
+            z-index: 1; /* Ensure the navbar is on top */
+        }
+        .image{
+          display: flex;
+       flex-wrap: wrap;
+
+          
+          transform: rotate(0deg); /* Initial rotation */
+           animation: rotateAnimation 1s forwards; /* Apply animation *//* Rotate by 45 degrees */
+          box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* White shadow */
+        }
+        @keyframes rotateAnimation {
+      from {
+    transform: rotate(45deg); /* Start rotation at 0 degrees */
+  }
+      to {
+    transform: rotate(0deg); /* End rotation at 45 degrees */
+  }
+}
+    </style>
+</head>
+<body class="body">
+    <div class="main">
+
+        <nav class="sticky top-0 navbar">
+            <div class="max-w-5xl mx-auto px-4">
+                <div class="flex items-center justify-between h-16">
+                    <span class="text-2xl text-white font-semibold">Aakriti</span>
+                    <div class="flex space-x-4 text-white">
+                        <a href="/">Dashboard</a>
+                        <a href="/about">About</a>
+                        <a href="https://github.com/aakriti912?tab=repositories">Projects</a>
+                        <a href="https://www.linkedin.com/in/aakriti-thapa-7511121a4/">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-cols-1 gap-4 max-w-6xl mx-auto p-8">
+<div class="p-8">
+    <h2 class="text-6xl font-semibold text-white">Frontend Developer Extraordinaire: Crafting Immersive Web Experiences with Passion and Precision</h2>
+ <p class="text-gray-700 pt-10">
+    Passionate frontend developer specializing in React, HTML, CSS, TypeScript, and Git. Expertise in crafting dynamic, user-centric web applications. Skilled in architecting React components, optimizing performance, and collaborating effectively. Committed to delivering high-quality solutions that push the boundaries of frontend development and drive innovation.</p>
+</div>
+<div>
+   <!-- <img src="./image/image (1).png" alt="image" class="h-[500px] w-[500px] max-w-4xl"/> -->
+
+</div>
+
+
+            </div>
+        </nav>
+ 
+
+
+
+    </div>
+
+    <div class="flex flex-cols-1 gap-4 max-w-6xl mx-auto p-8 text-white">
+      <div class="grid">
+      <h4 class="text-4xl">Services</h4>
+      <h1 class="text-white pt-10 text-5xl">With creative thinking and a problem-solving approach, I strive to create remarkable solutions that enrich and excite users.</h1>
+      </div>
+      </div>
+
+      <div class="flex flex-cols-2 gap-4 max-w-6xl mx-auto p-8 text-white">
+        <div class="grid max-w-6xl mx-auto p-8 text-white">
+   
+
+        <h3 class="text-white  text-4xl pb-[5px]">web development</h3><hr>
+      <span class="pt-[20px]">Web development with HTML, CSS, and JavaScript coupled with frameworks like React opens doors to dynamic, responsive interfaces. When combined with modern UI frameworks like Tailwind CSS, Material-UI, Bulma, or Bootstrap, it streamlines the design process, fostering efficient development and polished user experiences.</span>
+       </div>
+
+     <div class="image">
+        <img src="./image/ss.png" alt="image" class="max-w-md float-right" />
+     </div><br/>
+</div>
+
+<h1 class="text-2xl">Work</h1>
+<div class="work h-[500px] max-w-full flex-cols-3 gap-4 flex justify-center items-center">
+
+  <div class="max-w-sm rounded overflow-hidden shadow-lg bg-black">
+
+    <div class="px-6 py-4">
+      <div class="font-bold text-xl mb-2 text-gray-700">Project minor</div>
+      <p class="text-gray-700 text-base">
+
+        "NCIT Note Sewa" is a college project leveraging React, MongoDB, and Node.js to facilitate the buying and selling of secondhand books, notes, and college-related items within the NCIT community. With a dynamic React frontend, MongoDB for efficient data management, and Node.js powering the backend, the platform offers a user-friendly interface for browsing listings, connecting buyers with sellers, and managing transactions securely. By harnessing modern technology, 
+        "NCIT Note Sewa" streamlines the exchange of educational resources, fostering a convenient marketplace to support students' academic endeavors.
+      </p>
+          </div>
+        <div class="px-6 pt-4 pb-2">
+      <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
+      <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
+      <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+        </div>
+  </div>
+
+
+
+
+  <div class="max-w-sm rounded overflow-hidden shadow-lg bg-black">
+
+    <div class="px-6 py-4">
+      <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+      <p class="text-gray-700 text-base">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+      </p>
+          </div>
+        <div class="px-6 pt-4 pb-2">
+      <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
+      <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
+      <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+        </div>
+  </div>
+  <div class="max-w-sm rounded overflow-hidden shadow-lg bg-black">
+
+    <div class="px-6 py-4">
+      <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+      <p class="text-gray-700 text-base">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+      </p>
+          </div>
+        <div class="px-6 pt-4 pb-2">
+      <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
+      <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
+      <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+        </div>
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
