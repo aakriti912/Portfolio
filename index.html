@@ -4,15 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body {
             margin: 0;
             padding: 0;
-            background-image: url("https://img.freepik.com/free-photo/black-mulberry-paper-textured-background_53876-129520.jpg?w=826&t=st=1708011881~exp=1708012481~hmac=9c3e4cfbd74cdef34ab0a02cafe72fa208e02781410f64a21414092f34835cda");
+            /* background-image: url("https://img.freepik.com/free-photo/black-mulberry-paper-textured-background_53876-129520.jpg?w=826&t=st=1708011881~exp=1708012481~hmac=9c3e4cfbd74cdef34ab0a02cafe72fa208e02781410f64a21414092f34835cda"); */
+           background-color: black;
             background-size: cover;
             background-position: center;
             height: 100vh; /* Ensure the body takes the full height of the viewport */
+           font-family: 'Share Tech Mono', monospace;
+        }
+        .main{
+            background-color: #C9C0AF;
+            background-image: url("./image/image (1).png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position-x: right;
+            background-position-y: 50px;
+            margin:7px;
+            height: 100vh;
         }
 
         .navbar {
@@ -21,33 +34,42 @@
     </style>
 </head>
 <body class="body">
-    <div>
+    <div class="main">
+
         <nav class="sticky top-0 navbar">
             <div class="max-w-5xl mx-auto px-4">
                 <div class="flex items-center justify-between h-16">
-                    <span class="text-2xl text-white font-semibold font-serif">Aakriti</span>
+                    <span class="text-2xl text-white font-semibold">Aakriti</span>
                     <div class="flex space-x-4 text-white">
-                        <a href="#">Dashboard</a>
-                        <a href="#">About</a>
-                        <a href="#">Projects</a>
-                        <a href="#">LinkedIn</a>
+                        <a href="/">Dashboard</a>
+                        <a href="/about">About</a>
+                        <a href="https://github.com/aakriti912?tab=repositories">Projects</a>
+                        <a href="https://www.linkedin.com/in/aakriti-thapa-7511121a4/">LinkedIn</a>
                     </div>
                 </div>
             </div>
-            <div class="grid grid-cols-2 gap-8 max-w-screen-md mx-auto p-8">
+            <div class="flex flex-cols-1 gap-4 max-w-6xl mx-auto p-8">
 <div class="p-8">
-    <h2 class="text-6xl font-semibold font-sans text-white">Hi my name is aakriti thapa</h2>
- <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+    <h2 class="text-6xl font-semibold text-white">Frontend Developer Extraordinaire: Crafting Immersive Web Experiences with Passion and Precision</h2>
+ <p class="text-gray-700 pt-10">
+    Passionate frontend developer specializing in React, HTML, CSS, TypeScript, and Git. Expertise in crafting dynamic, user-centric web applications. Skilled in architecting React components, optimizing performance, and collaborating effectively. Committed to delivering high-quality solutions that push the boundaries of frontend development and drive innovation.</p>
 </div>
 <div>
-    <img src="https://th.bing.com/th/id/R.01c7b181419e15cc614b2297a0e0b959?rik=zGf2g7HyblIvTg&riu=http%3a%2f%2fwww.aceshowbiz.com%2fimages%2fstill%2favatar114.jpg&ehk=A2qdetFD%2bCnHXOA868yrfaHHPewee02Hh2kWzPtS81Y%3d&risl=&pid=ImgRaw&r=0" alt="my image" class="max-w-full h-auto"/>
+   <!-- <img src="./image/image (1).png" alt="image" class="h-[500px] w-[500px] max-w-4xl"/> -->
 
 </div>
+
+
             </div>
         </nav>
 
 
-
+<div>
+    <h4>service</h4>
+    <h1>
+        With creative thinking and a problem-solving approach, I strive to create remarkable solutions that enrich and excite users. 
+    </h1>
+</div>
 
     </div>
 </body>
